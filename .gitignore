@@ -1,3 +1,17 @@
+#other
+test.py
+/.txt
+screenshots/*
+#virtualenv
+venvs/*
+#vscode
+/.vscode/
+#idea
+/.idea/
+
+### ### ### ### ### ###
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
