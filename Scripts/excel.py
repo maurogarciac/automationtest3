@@ -7,5 +7,5 @@ driver = webdriver.Remote(
     'http://127.0.0.1:4723',
     desired_caps)
 
-screenshotBase64 = driver.get_screenshot_as_base64()
-screenshotBase64
+#screenshotBase64 = driver.get_screenshot_as_base64()
+#screenshotBase64

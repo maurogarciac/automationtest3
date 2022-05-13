@@ -2,6 +2,7 @@
 test.py
 /.txt
 screenshots/*
+smoketest1.md
 #virtualenv
 venvs/*
 #vscode
