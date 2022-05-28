@@ -1,6 +1,7 @@
 #other
 test.py
 /.txt
+/.ipynb
 screenshots/*
 smoketest1.md
 #virtualenv
