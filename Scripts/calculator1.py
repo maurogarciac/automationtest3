@@ -1,9 +1,7 @@
 from appium import webdriver
-#from selenium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 import base64
 from selenium.webdriver.common.action_chains import ActionChains
-#from selenium.webdriver.common import By
 
 
 
