@@ -3,32 +3,33 @@ from appium.webdriver.common.mobileby import MobileBy
 
 
 desired_caps = {
-    "app" : "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
-    "getMatchedImageResult" : True,
+    "automationName" : "UiAutomator2",
+    "platformName" : "Android",
+    "platformVersion" : "11.0",
+    "deviceName" : "pixel_2",
+    "app" : "F:\COSAS IMPORTANTES\SCRIPSTSTSTSTS\Calculator_v8.1 (403424005)_apkpure.com.apk"
 }
 driver = webdriver.Remote(
-    'http://127.0.0.1:4723',
+    'http://127.0.0.1:4723/wd/hub',
     desired_caps)
 
 
 try:
-    seven_button = driver.find_element(MobileBy.NAME, "Seven")
-    eight_button = driver.find_element(MobileBy.ACCESSIBILITY_ID, "num8Button")
-    plus_button = driver.find_element(MobileBy.ACCESSIBILITY_ID, "plusButton")
-    #equals_button = driver.find_element(MobileBy.XPATH, "//Button[Name='Equals']")
-    equals_button = driver.find_element(MobileBy.ACCESSIBILITY_ID, "equalButton")
-    #seven_button = driver.find_element_by_name('Seven')
-    display = driver.find_element(MobileBy.ACCESSIBILITY_ID, "CalculatorResults")
+    ...
+    seven_button = driver.find_element(MobileBy.ID, "digit_7")
+    nine_button = driver.find_element(MobileBy.ID, "digit_9")
+    add_button = driver.find_element(MobileBy.ID, "op_add")
+    equals_button = driver.find_element(MobileBy.ID, "eq")
 
+    
     seven_button.click()
-    plus_button.click()
-    eight_button.click()
+    add_button.click()
+    nine_button.click()
     equals_button.click()
-    print(display.text)
+    
 
-    #print(driver.find_element(MobileBy.ACCESIBILITYID, "CalculatorResults").text)
-    #driver.get_screenshot_as_png()
-
+    driver.get_screenshot_as_png()
  
 finally:
+    ...
     driver.quit()
