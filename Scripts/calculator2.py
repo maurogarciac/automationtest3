@@ -1,3 +1,4 @@
+
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 
@@ -15,21 +16,27 @@ driver = webdriver.Remote(
 
 
 try:
-    ...
     seven_button = driver.find_element(MobileBy.ID, "digit_7")
     nine_button = driver.find_element(MobileBy.ID, "digit_9")
     add_button = driver.find_element(MobileBy.ID, "op_add")
     equals_button = driver.find_element(MobileBy.ID, "eq")
+    display = driver.find_element(MobileBy.ID, "formula")
+    pre_display = driver.find_element(MobileBy.ID, "result_preview")
+    minus_android = driver.find_element(MobileBy.IMAGE, "minus_android.png")
 
-    
+
     seven_button.click()
     add_button.click()
     nine_button.click()
-    equals_button.click()
+    minus_android.click()
     
+    print(pre_display.text)
+    equals_button.click()
+    #print(display.text)
 
-    driver.get_screenshot_as_png()
+    driver.save_screenshot("screenshot.png")
+
+
  
 finally:
-    ...
     driver.quit()
