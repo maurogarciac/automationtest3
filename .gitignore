@@ -8,8 +8,9 @@ screenshots/*
 smoketest1.md
 #virtualenv
 venvs/*
-#vscode
+#vscode o visualstudio
 /.vscode/
+/.vs/
 #idea
 /.idea/
 
